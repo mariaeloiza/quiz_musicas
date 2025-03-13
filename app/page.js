@@ -62,13 +62,13 @@ function QuizMusicas() {
 
                         <br/>
 
-                        <label><input name="p1" type="radio" onChange={ ()=> {alteraP1(0); alteraMostraP2(true); alteraMostraP1(false)} } /> O rei leão </label>
+                        <label><input name="p1" type="radio" onChange={ ()=> {alteraP1(0); alteraMostraP2(true); alteraMostraP1(false)} } /> Peter Pan </label>
                         <br/>
                         <label><input name="p1" type="radio" onChange={ ()=> {alteraP1(0); alteraMostraP2(true); alteraMostraP1(false)} } /> Enrolados </label>
                         <br/>
                         <label><input name="p1" type="radio" onChange={ ()=> {alteraP1(1); alteraMostraP2(true); alteraMostraP1(false)} } /> Pinocchio </label>
                         <br/>
-                        <label><input name="p1" type="radio" onChange={ ()=> {alteraP1(0); alteraMostraP2(true); alteraMostraP1(false)} } /> Moana 2 </label>
+                        <label><input name="p1" type="radio" onChange={ ()=> {alteraP1(0); alteraMostraP2(true); alteraMostraP1(false)} } /> Dumbo </label>
                         <br/>
                     </div>
             }
@@ -88,9 +88,9 @@ function QuizMusicas() {
                         <br/>
                         <label><input name="p2" type="radio" onChange={ ()=> {alteraP2(0); alteraMostraP3(true); alteraMostraP2(false)} } /> Branca de neve </label>
                         <br/>
-                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP2(0); alteraMostraP3(true); alteraMostraP2(false)} } /> Tarzan </label>
+                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP2(0); alteraMostraP3(true); alteraMostraP2(false)} } /> A Bela e a Fera </label>
                         <br/>
-                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP2(0); alteraMostraP3(true); alteraMostraP2(false)} } /> Mulan </label>
+                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP2(0); alteraMostraP3(true); alteraMostraP2(false)} } /> Bambi </label>
                         <br/> 
                     </div>
             }
@@ -106,11 +106,11 @@ function QuizMusicas() {
 
                         <br/>
 
-                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP3(0); alteraMostraP4(true); alteraMostraP3(false)} }  /> Walle-e </label>
+                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP3(0); alteraMostraP4(true); alteraMostraP3(false)} }  /> A Dama e o Vagabundo </label>
                         <br/>
                         <label><input name="p2" type="radio" onChange={ ()=> {alteraP3(0); alteraMostraP4(true); alteraMostraP3(false)} } /> Lucca </label>
                         <br/>
-                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP3(0); alteraMostraP4(true); alteraMostraP3(false)} } /> Cinderela </label>
+                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP3(0); alteraMostraP4(true); alteraMostraP3(false)} } /> Aladdin </label>
                         <br/>
                         <label><input name="p2" type="radio" onChange={ ()=> {alteraP3(1); alteraMostraP4(true); alteraMostraP3(false)} } /> Enrolados </label>
                         <br/> 
@@ -132,9 +132,9 @@ function QuizMusicas() {
                         <br/>
                         <label><input name="p2" type="radio" onChange={ ()=> {alteraP4(1); alteraMostraP5(true); alteraMostraP4(false)} } /> Frozen </label>
                         <br/>
-                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP4(0); alteraMostraP5(true); alteraMostraP4(false)} } /> Filhos da terra </label>
+                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP4(0); alteraMostraP5(true); alteraMostraP4(false)} } /> Hércules </label>
                         <br/>
-                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP4(0); alteraMostraP5(true); alteraMostraP4(false)} } /> Aladdin </label>
+                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP4(0); alteraMostraP5(true); alteraMostraP4(false)} } /> A Princesa e o Sapo </label>
                         <br/> 
                     </div>
             }
@@ -150,7 +150,7 @@ function QuizMusicas() {
 
                         <br/>
 
-                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP5(0); alteraMostraP6(true); alteraMostraP5(false)} }  /> Tarzan </label>
+                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP5(0); alteraMostraP6(true); alteraMostraP5(false)} }  /> Irmão Urso </label>
                         <br/>
                         <label><input name="p2" type="radio" onChange={ ()=> {alteraP5(0); alteraMostraP6(true); alteraMostraP5(false)} } /> Mulan </label>
                         <br/>
@@ -172,11 +172,11 @@ function QuizMusicas() {
 
                         <br/>
 
-                        <label><input name="p2" type="radio" onChange={ ()=> alteraP6(0) }  /> Bela adormecida </label>
+                        <label><input name="p2" type="radio" onChange={ ()=> alteraP6(0) }  /> A Bela adormecida </label>
                         <br/>
-                        <label><input name="p2" type="radio" onChange={ ()=> alteraP6(0) } /> Lucca </label>
+                        <label><input name="p2" type="radio" onChange={ ()=> alteraP6(0) } /> Pocahontas </label>
                         <br/>
-                        <label><input name="p2" type="radio" onChange={ ()=> alteraP6(0) } /> Cinderela </label>
+                        <label><input name="p2" type="radio" onChange={ ()=> alteraP6(0) } /> A Pequena Sereia </label>
                         <br/>
                         <label><input name="p2" type="radio" onChange={ ()=> alteraP6(1) } /> Tarzan </label>
                         <br/> 
