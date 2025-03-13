@@ -181,14 +181,14 @@ function QuizMusicas() {
                         <label><input name="p2" type="radio" onChange={ ()=> alteraP6(1) } /> Tarzan </label>
                         <br/> 
 
-                        <button onClick={ ()=> {calculaTotal(); alteraMostraFinal(true)} }> Finalizar </button>
+                        <button onClick={ ()=> {calculaTotal(); alteraMostraFinal(true); alteraMostraP6(false)} }> Finalizar </button>
                     </div>
             }
 
             {
                 mostraFinal == true &&
-                <div>
-                    <h1> Total de pontos: {total} <br/> de 6 perguntas</h1>
+                <div className="final">
+                    <p> Total de pontos: {total} <br/> de 6 perguntas</p>
                 </div>
             }
 
