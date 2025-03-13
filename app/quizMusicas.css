@@ -1,6 +1,9 @@
+@import url('https://fonts.cdnfonts.com/css/waltograph');
+
 body{
     background-color: blueviolet;
     color: lightgrey;
+    font-family: 'Waltograph', sans-serif;
 }
 
 .inicio{
@@ -12,11 +15,12 @@ body{
 .inicio button{
     background-color: rgb(9, 25, 100);
     color: lightgrey;
-    font-size: 25px;
+    font-size: 50px;
     border: none;
     border-radius: 50%;
     margin: 50px;
     padding: 4%;
+    font-family: 'Waltograph', sans-serif;
 
     cursor: pointer;
 }
@@ -48,3 +52,18 @@ body{
     text-align: center;
     margin: 20%;
 }
+
+/* Aplicando borda nas letras */
+h1, h2, h3, p {
+    font-family: 'Waltograph', sans-serif;
+    font-weight: 100; /* Pode ser 'normal', 'bold', ou o valor numérico */
+    font-size: 50px; /* Ajuste o tamanho da fonte conforme necessário */
+    
+    /* Criando a borda usando múltiplos sombreamentos */
+    text-shadow: 
+      1px 1px 0px #000,   /* Borda superior direita */
+      -1px 1px 0px #000,  /* Borda inferior direita */
+      -1px -1px 0px #000, /* Borda inferior esquerda */
+      1px -1px 0px #000;  /* Borda superior esquerda */
+  }
+  
