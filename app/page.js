@@ -163,6 +163,13 @@ function QuizMusicas() {
                 mostraP6 == true &&
                     <div className="pergunta">
                         <h2>De que filme é essa música?</h2>
+
+                        <audio controls>
+                            <source src="/audios/tarzan30s.mp3" type="audio/mp3"/>
+                        </audio>
+
+                        <br/>
+
                         <label><input name="p2" type="radio" onChange={ ()=> alteraP2(0) }  /> Bela adormecida </label>
                         <br/>
                         <label><input name="p2" type="radio" onChange={ ()=> alteraP2(0) } /> Lucca </label>
