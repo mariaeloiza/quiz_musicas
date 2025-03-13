@@ -145,7 +145,7 @@ function QuizMusicas() {
                         <h2>De que filme é essa música?</h2>
 
                         <audio controls>
-                            <source src="/audios/Aladdin30s (mp3cut.net).mp3" type="audio/mp3"/>
+                            <source src="/audios/Aladdin(mp3cut.net).mp3" type="audio/mp3"/>
                         </audio>
 
                         <br/>
