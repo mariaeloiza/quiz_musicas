@@ -185,12 +185,18 @@ function QuizMusicas() {
                     </div>
             }
 
-            {
-                mostraFinal == true &&
-                <div className="final">
-                    <p> Total de pontos: {total} <br/> de 6 perguntas</p>
-                </div>
-            }
+             {
+                    mostraFinal == true &&
+                <div className="agradecimento">
+                    <p> Obrigado por jogar!</p>
+                    <Image
+                     src="/gif_reileao.gif" 
+                  alt="Agradecimento em GIF"
+          width={250} 
+          height={150} 
+        />
+                    </div>    
+                }
 
 
             {
