@@ -23,13 +23,15 @@ function QuizMusicas() {
     const [ mostraP4, alteraMostraP4 ] = useState(false)
     const [ mostraP5, alteraMostraP5 ] = useState(false)
     const [ mostraP6, alteraMostraP6 ] = useState(false)
+
+    const [ mostraFinal, alteraMostraFinal ] = useState(false)
     
     function calculaTotal(){
         let totalAtualizado = 0 
     
-        alteraTotal(p1+p2)
+        alteraTotal(p1+p2+p3+p4+p5+p6)
     
-        totalAtualizado = p1+p2
+        totalAtualizado = p1+p2+p3+p4+p5+p6
         alteraTotal(totalAtualizado)
     
         let valorBanco = parseInt(localStorage.getItem("total"))
@@ -55,7 +57,7 @@ function QuizMusicas() {
                         <h2>De que filme é essa música?</h2>
 
                         <audio controls>
-                            <source src="/audios/pinocchio30s.mp3" type="audio/mp3"/>
+                            <source src="/audios/pinocchio30s (mp3cut.net).mp3" type="audio/mp3"/>
                         </audio>
 
                         <br/>
@@ -77,7 +79,7 @@ function QuizMusicas() {
                         <h2>De que filme é essa música?</h2>
 
                         <audio controls>
-                            <source src="/audios/cinderella30s.mp3" type="audio/mp3"/>
+                            <source src="/audios/cinderella30s (mp3cut.net).mp3" type="audio/mp3"/>
                         </audio>
 
                         <br/>
@@ -99,7 +101,7 @@ function QuizMusicas() {
                         <h2>De que filme é essa música?</h2>
 
                         <audio controls>
-                            <source src="/audios/enrolados30s.mp3" type="audio/mp3"/>
+                            <source src="/audios/enrolados30s (mp3cut.net).mp3" type="audio/mp3"/>
                         </audio>
 
                         <br/>
@@ -121,7 +123,7 @@ function QuizMusicas() {
                         <h2>De que filme é essa música?</h2>
 
                         <audio controls>
-                            <source src="/audios/frozen30s.mp3" type="audio/mp3"/>
+                            <source src="/audios/frozen30s (mp3cut.net).mp3" type="audio/mp3"/>
                         </audio>
 
                         <br/>
@@ -143,7 +145,7 @@ function QuizMusicas() {
                         <h2>De que filme é essa música?</h2>
 
                         <audio controls>
-                            <source src="/audios/Aladdin30s.mp3" type="audio/mp3"/>
+                            <source src="/audios/Aladdin30s (mp3cut.net).mp3" type="audio/mp3"/>
                         </audio>
 
                         <br/>
@@ -165,24 +167,31 @@ function QuizMusicas() {
                         <h2>De que filme é essa música?</h2>
 
                         <audio controls>
-                            <source src="/audios/tarzan30s.mp3" type="audio/mp3"/>
+                            <source src="/audios/tarzan30s (mp3cut.net).mp3" type="audio/mp3"/>
                         </audio>
 
                         <br/>
 
-                        <label><input name="p2" type="radio" onChange={ ()=> alteraP2(0) }  /> Bela adormecida </label>
+                        <label><input name="p2" type="radio" onChange={ ()=> alteraP6(0) }  /> Bela adormecida </label>
                         <br/>
-                        <label><input name="p2" type="radio" onChange={ ()=> alteraP2(0) } /> Lucca </label>
+                        <label><input name="p2" type="radio" onChange={ ()=> alteraP6(0) } /> Lucca </label>
                         <br/>
-                        <label><input name="p2" type="radio" onChange={ ()=> alteraP2(0) } /> Cinderela </label>
+                        <label><input name="p2" type="radio" onChange={ ()=> alteraP6(0) } /> Cinderela </label>
                         <br/>
-                        <label><input name="p2" type="radio" onChange={ ()=> alteraP2(1) } /> Tarzan </label>
+                        <label><input name="p2" type="radio" onChange={ ()=> alteraP6(1) } /> Tarzan </label>
                         <br/> 
 
-                        <button onClick={ ()=> calculaTotal() }> Finalizar </button>
-                        <p> Total de pontos: {total} </p>
+                        <button onClick={ ()=> {calculaTotal(); alteraMostraFinal(true)} }> Finalizar </button>
                     </div>
             }
+
+            {
+                mostraFinal == true &&
+                <div>
+                    <h1> Total de pontos: {total} <br/> de 6 perguntas</h1>
+                </div>
+            }
+
 
             {
                 mostraErro == true &&

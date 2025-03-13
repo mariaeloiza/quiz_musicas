@@ -17,6 +17,8 @@ body{
     border-radius: 50%;
     margin: 50px;
     padding: 4%;
+
+    cursor: pointer;
 }
 
 .pergunta{
@@ -37,4 +39,6 @@ body{
     border-radius: 10%;
     margin: 50px;
     padding: 3%;
+
+    cursor: pointer;
 }
