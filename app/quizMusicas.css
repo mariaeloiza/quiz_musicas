@@ -9,7 +9,7 @@ body{
 
 .inicio{
     text-align: center;
-    margin-top: 15%;
+    margin-top: 12%;
     font-size: 25px;
 }
 
@@ -29,7 +29,14 @@ body{
 .pergunta{
     text-align: center;
     font-size: 20px;
-    margin: 15%;
+    margin: 10%;
+
+}
+
+.pergunta label{
+    font-size: 28px;
+
+    cursor: pointer;
 }
 
 .pergunta h2{
@@ -39,20 +46,33 @@ body{
 .pergunta button{
     background-color: rgb(9, 25, 100);
     color: lightgrey;
-    font-size: 20px;
+    font-family: 'Waltograph', sans-serif;
+    font-size: 30px;
     border: none;
-    border-radius: 10%;
-    margin: 50px;
+    border-radius: 15%;
+    margin-top: 40px;
+    margin-bottom: 0;
     padding: 3%;
 
     cursor: pointer;
 }
 
 .final{
+    border-radius: 8px;
     font-size: 25px;
     text-align: center;
     margin: 20%;
+    margin-bottom: 0;
     background-color: rgb(153, 27, 101);
+}
+
+.final ol{
+    display: flex;
+}
+
+.final li{
+    margin-left: 2%;
+    margin-right: 5%;
 }
 
 .agradecimento {
@@ -67,7 +87,7 @@ body{
     border-radius: 8px;
     background-color: blue;
     font-size: 18px; 
-  }
+}
 
 
 /* Aplicando borda nas letras */
@@ -82,5 +102,5 @@ h1, h2, h3, p {
       -1px 1px 0px #000,  /* Borda inferior direita */
       -1px -1px 0px #000, /* Borda inferior esquerda */
       1px -1px 0px #000;  /* Borda superior esquerda */
-  }
+}
   
