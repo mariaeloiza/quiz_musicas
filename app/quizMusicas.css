@@ -63,8 +63,9 @@ body{
     text-align: center;
     margin: 20%;
     margin-bottom: 0;
-    background-color: rgb(153, 27, 101);
+    background-color: rgba(98, 31, 161, 0.3);
     margin-top: 300px;
+    padding: 20px;
 }
 
 .final ol{
@@ -86,7 +87,7 @@ body{
     margin: 20px; /* Remove a margem para garantir que o texto fique no topo */
     padding: 10px 20px;
     border-radius: 8px;
-    background-color: blue;
+    /* background-color: blue; */
     font-size: 18px; 
 
 }
@@ -126,4 +127,19 @@ h1, h2, h3, p {
     color: blueviolet;
     transition: 0.3s;
     transform: scale(1.05);
+}
+
+
+ol{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    align-items: center;
+}
+li{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 30px;
+    margin-bottom: 15px;
 }

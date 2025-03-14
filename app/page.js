@@ -23,6 +23,7 @@ function QuizMusicas() {
     const [mostraP4, alteraMostraP4] = useState(false)
     const [mostraP5, alteraMostraP5] = useState(false)
     const [mostraP6, alteraMostraP6] = useState(false)
+    const [mostraP7, alteraMostraP7] = useState(false)
    
 
     const [mostraFinal, alteraMostraFinal] = useState(false)
@@ -198,41 +199,35 @@ function QuizMusicas() {
                     </audio>
 
                     <br />
-                    <div onClick={() => alteraP6(0)} > A Bela adormecida </div>
-                    <div onClick={() => alteraP6(0)} > Pocahontas </div>
-                    <div onClick={() => alteraP6(0)} > A Pequena Sereia </div>
-                    <div onClick={() => alteraP6(1)} > Tarzan </div>
+                    <div onClick={() => { alteraP6(0); alteraMostraP6(false); alteraMostraP7(true)}} > A Bela adormecida </div>
+                    <div onClick={() => { alteraP6(0); alteraMostraP6(false); alteraMostraP7(true)}} > Pocahontas </div>
+                    <div onClick={() => { alteraP6(0); alteraMostraP6(false); alteraMostraP7(true)}} > A Pequena Sereia </div>
+                    <div onClick={() => { alteraP6(1); alteraMostraP6(false); alteraMostraP7(true)}} > Tarzan </div>
 
-                    {/* <label><input name="p6" type="radio" onChange={() => alteraP6(0)} /> A Bela adormecida </label>
-                    <br />
-                    <label><input name="p6" type="radio" onChange={() => alteraP6(0)} /> Pocahontas </label>
-                    <br />
-                    <label><input name="p6" type="radio" onChange={() => alteraP6(0)} /> A Pequena Sereia </label>
-                    <br />
-                    <label><input name="p6" type="radio" onChange={() => alteraP6(1)} /> Tarzan </label>
-                    <br /> */}
-
-                    <button onClick={() => { calculaTotal(); alteraMostraFinal(true); alteraMostraP6(false) }}> Finalizar </button>
                 </div>
             }
 
             {
-
-}
+                mostraP7 == true &&
+                <div className="pergunta">
+                    <h2>Está pronto para ver seu resultado?</h2>
+                    <button onClick={() => { calculaTotal(); alteraMostraFinal(true); alteraMostraP7(false) }}> Finalizar </button>
+                </div>
+            }
 
             {
                 mostraFinal == true &&
                 <div className="final">
-                    <p> Total de pontos: {total} <br /> de 6 perguntas</p>
+                    <p> Você acertou {total} pergunta de 6 perguntas</p>
                     <br/>
                     
                     <ol>
-                        <li> <img src='/capa_pinocchio.jpg' width={80} height={120} /> </li>
-                        <li> <img src='/capa_cinderela.jpg' width={80} height={120} /> </li>
-                        <li> <img src='/Enrolados.jpg' width={80} height={120} /> </li>
-                        <li> <img src='/capa_frozen.jpg' width={80} height={120} /> </li>
-                        <li> <img src='/capa_aladdin.jpg' width={80} height={120} /> </li>
-                        <li> <img src='/capa_tarzan.jpg' width={80} height={120} /> </li>
+                        <li> <img src='/capa_pinocchio.jpg' width={150} /> {p1 == 0 ? <span style={{color:"salmon"}}>Errou</span> : <span style={{color:"lightgreen"}}>Acertou</span>} </li>
+                        <li> <img src='/capa_cinderela.jpg' width={150} /> {p2 == 0 ? <span style={{color:"salmon"}}>Errou</span> : <span style={{color:"lightgreen"}}>Acertou</span>} </li>
+                        <li> <img src='/Enrolados.jpg' width={150} /> {p3 == 0 ? <span style={{color:"salmon"}}>Errou</span> : <span style={{color:"lightgreen"}}>Acertou</span>} </li>
+                        <li> <img src='/capa_frozen.jpg' width={150} /> {p4 == 0 ? <span style={{color:"salmon"}}>Errou</span> : <span style={{color:"lightgreen"}}>Acertou</span>} </li>
+                        <li> <img src='/capa_aladdin.jpg' width={150} /> {p5 == 0 ? <span style={{color:"salmon"}}>Errou</span> : <span style={{color:"lightgreen"}}>Acertou</span>} </li>
+                        <li> <img src='/capa_tarzan.jpg' width={150} /> {p6 == 0 ? <span style={{color:"salmon"}}>Errou</span> : <span style={{color:"lightgreen"}}>Acertou</span>} </li>
                     </ol>
                 </div>
             }
