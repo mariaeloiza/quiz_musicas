@@ -11,7 +11,7 @@ export default function Layout({ children }) {
     <html lang="pt-BR">
       <head>
         <link href="https://fonts.cdnfonts.com/css/waltograph" rel="stylesheet" />
-        <link rel="icon" href="/disney.png" />
+        <link rel="icon" href="/disney.png"/>
       </head>
       <body>{children}</body>
     </html>
