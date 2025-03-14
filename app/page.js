@@ -15,8 +15,6 @@ function QuizMusicas() {
     const [ total, alteraTotal ] = useState(0)
     
     const [ mostraInicio, alteraMostraInicio ] = useState(true)
-    const [ mostraErro, alteraMostraErro ] = useState(false)
-    const [ mostraAcerto, alteraMostraAcerto ] = useState(false)
 
     const [ mostraP1, alteraMostraP1 ] = useState(false)
     const [ mostraP2, alteraMostraP2 ] = useState(false)
@@ -186,24 +184,27 @@ function QuizMusicas() {
                     </div>
             }
 
-       {
+            {
                  mostraFinal == true &&
                  <div className="final">
                      <p> Total de pontos: {total} <br/> de 6 perguntas</p>
+                     <ol>
+                        <li><img src='/capa_pinocchio.jpg' width={85} height={120}/></li>
+                        <li><img src='/capa_cinderela.jpg' width={85} height={120}/></li>
+                        <li><img src='/Enrolados.jpg' width={85} height={120}/></li>
+                        <li><img src='/capa_frozen.jpg' width={85} height={120}/></li>
+                        <li><img src='/capa_aladdin.jpg' width={85} height={120}/></li>
+                        <li><img src='/capa_tarzan.jpg' width={85} height={120}/></li>
+                     </ol>
                  </div>
-             }
-              {
-                     mostraFinal == true &&
-                 <div className="agradecimento">
-                     <p> Obrigado por jogar!</p>
-                     <Image
-                      src="/gif_reileao.gif" 
-                   alt="Agradecimento em GIF"
-           width={250} 
-           height={150} 
-         />
-                     </div>    
-                 }
+            }
+            {
+                mostraFinal == true &&
+                    <div className="agradecimento">
+                        <p> Obrigado por jogar!</p>
+                        <Image src="/gif rei leão.gif"  alt="Agradecimento em GIF" width={250} height={150} />
+                    </div>    
+            }
 
         </div>
 
