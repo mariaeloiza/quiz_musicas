@@ -189,6 +189,14 @@ function QuizMusicas() {
                 mostraFinal == true &&
                 <div className="final">
                     <p> Total de pontos: {total} <br /> de 6 perguntas</p>
+                    <ol>
+                        <li> <img src='/capa_pinocchio.jpg' width={80} height={120} /> </li>
+                        <li> <img src='/capa_cinderela.jpg' width={80} height={120} /> </li>
+                        <li> <img src='/Enrolados.jpg' width={80} height={120} /> </li>
+                        <li> <img src='/capa_frozen.jpg' width={80} height={120} /> </li>
+                        <li> <img src='/capa_aladdin.jpg' width={80} height={120} /> </li>
+                        <li> <img src='/capa_tarzan.jpg' width={80} height={120} /> </li>
+                    </ol>
                 </div>
             }
             {
