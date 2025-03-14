@@ -64,6 +64,7 @@ body{
     margin: 20%;
     margin-bottom: 0;
     background-color: rgb(153, 27, 101);
+    margin-top: 300px;
 }
 
 .final ol{
@@ -87,6 +88,7 @@ body{
     border-radius: 8px;
     background-color: blue;
     font-size: 18px; 
+
 }
 
 
@@ -104,3 +106,24 @@ h1, h2, h3, p {
       1px -1px 0px #000;  /* Borda superior esquerda */
 }
   
+
+.pergunta audio{
+    margin-bottom: 30px;
+}
+.pergunta div{
+    background-color: white;
+    padding: 15px;
+    color: #444;
+    border-radius: 10px;
+    box-shadow: 1px 2px 3px #CCC;
+    margin: auto;
+    margin-top: 25px;
+    width: 300px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.pergunta div:hover{
+    color: blueviolet;
+    transition: 0.3s;
+    transform: scale(1.05);
+}

@@ -23,15 +23,22 @@ function QuizMusicas() {
     const [mostraP4, alteraMostraP4] = useState(false)
     const [mostraP5, alteraMostraP5] = useState(false)
     const [mostraP6, alteraMostraP6] = useState(false)
+   
 
     const [mostraFinal, alteraMostraFinal] = useState(false)
 
     function calculaTotal() {
-        let totalAtualizado = 0
+        
 
-        alteraTotal(p1 + p2 + p3 + p4 + p5 + p6)
+        let totalAtualizado = p1 + p2 + p3 + p4 + p5 + p6
 
-        totalAtualizado = p1 + p2 + p3 + p4 + p5 + p6
+        console.log("p1 "+p1)
+        console.log("p2 "+p2)
+        console.log("p3 "+p3)
+        console.log("p4 "+p4)
+        console.log("p5 "+p5)
+        console.log("p6 "+p6)
+
         alteraTotal(totalAtualizado)
 
         let valorBanco = parseInt(localStorage.getItem("total"))
@@ -62,14 +69,17 @@ function QuizMusicas() {
 
                     <br />
 
-                    <label><input name="p1" type="radio" onChange={() => { alteraP1(0); alteraMostraP2(true); alteraMostraP1(false) }} /> Peter Pan </label>
+                    <div onClick={() => { alteraP1(0); alteraMostraP2(true); alteraMostraP1(false) }} > Peter Pan </div>
+                    <div onClick={() => { alteraP1(0); alteraMostraP2(true); alteraMostraP1(false) }} > Enrolados </div>
+                    <div onClick={() => { alteraP1(1); alteraMostraP2(true); alteraMostraP1(false) }} > Pinocchio </div>
+                    <div onClick={() => { alteraP1(0); alteraMostraP2(true); alteraMostraP1(false) }} > Dumbo </div>
+                    {/* <br />
+                    <label><input name="p1" type="radio" onChange={() => { alteraP1(0); alteraMostraP2(true); alteraMostraP1(false) }} />  </label>
                     <br />
-                    <label><input name="p1" type="radio" onChange={() => { alteraP1(0); alteraMostraP2(true); alteraMostraP1(false) }} /> Enrolados </label>
+                    <label><input name="p1" type="radio" onChange={() => { alteraP1(1); alteraMostraP2(true); alteraMostraP1(false) }} />  </label>
                     <br />
-                    <label><input name="p1" type="radio" onChange={() => { alteraP1(1); alteraMostraP2(true); alteraMostraP1(false) }} /> Pinocchio </label>
-                    <br />
-                    <label><input name="p1" type="radio" onChange={() => { alteraP1(0); alteraMostraP2(true); alteraMostraP1(false) }} /> Dumbo </label>
-                    <br />
+                    <label><input name="p1" type="radio" onChange={() => { alteraP1(0); alteraMostraP2(true); alteraMostraP1(false) }} />  </label>
+                    <br /> */}
                 </div>
             }
 
@@ -83,15 +93,20 @@ function QuizMusicas() {
                     </audio>
 
                     <br />
+                    <div onClick={() => { alteraP2(1); alteraMostraP3(true); alteraMostraP2(false) }} > Cinderela </div>
+                    <div onClick={() => { alteraP2(0); alteraMostraP3(true); alteraMostraP2(false) }} > Branca de Neve </div>
+                    <div onClick={() => { alteraP2(0); alteraMostraP3(true); alteraMostraP2(false) }} > A Bela e a Fera </div>
+                    <div onClick={() => { alteraP2(0); alteraMostraP3(true); alteraMostraP2(false) }} > Bambi </div>
 
-                    <label><input name="p2" type="radio" onChange={() => { alteraP2(1); alteraMostraP3(true); alteraMostraP2(false) }} /> Cinderela </label>
+                    
+                    {/* <label><input name="p2" type="radio" onChange={() => { alteraP2(1); alteraMostraP3(true); alteraMostraP2(false) }} /> Cinderela </label>
                     <br />
                     <label><input name="p2" type="radio" onChange={() => { alteraP2(0); alteraMostraP3(true); alteraMostraP2(false) }} /> Branca de neve </label>
                     <br />
                     <label><input name="p2" type="radio" onChange={() => { alteraP2(0); alteraMostraP3(true); alteraMostraP2(false) }} /> A Bela e a Fera </label>
                     <br />
                     <label><input name="p2" type="radio" onChange={() => { alteraP2(0); alteraMostraP3(true); alteraMostraP2(false) }} /> Bambi </label>
-                    <br />
+                    <br /> */}
                 </div>
             }
 
@@ -105,15 +120,19 @@ function QuizMusicas() {
                     </audio>
 
                     <br />
+                    <div onClick={() => { alteraP3(0); alteraMostraP4(true); alteraMostraP3(false) }} > A Dama e o Vagabundo </div>
+                    <div onClick={() => { alteraP3(0); alteraMostraP4(true); alteraMostraP3(false) }} > Lucca </div>
+                    <div onClick={() => { alteraP3(0); alteraMostraP4(true); alteraMostraP3(false) }} > Aladdin </div>
+                    <div onClick={() => { alteraP3(1); alteraMostraP4(true); alteraMostraP3(false) }} > Enrolados </div>
 
-                    <label><input name="p2" type="radio" onChange={() => { alteraP3(0); alteraMostraP4(true); alteraMostraP3(false) }} /> A Dama e o Vagabundo </label>
+                    {/* <label><input name="p3" type="radio" onChange={() => { alteraP3(0); alteraMostraP4(true); alteraMostraP3(false) }} /> A Dama e o Vagabundo </label>
                     <br />
-                    <label><input name="p2" type="radio" onChange={() => { alteraP3(0); alteraMostraP4(true); alteraMostraP3(false) }} /> Lucca </label>
+                    <label><input name="p3" type="radio" onChange={() => { alteraP3(0); alteraMostraP4(true); alteraMostraP3(false) }} /> Lucca </label>
                     <br />
-                    <label><input name="p2" type="radio" onChange={() => { alteraP3(0); alteraMostraP4(true); alteraMostraP3(false) }} /> Aladdin </label>
+                    <label><input name="p3" type="radio" onChange={() => { alteraP3(0); alteraMostraP4(true); alteraMostraP3(false) }} /> Aladdin </label>
                     <br />
-                    <label><input name="p2" type="radio" onChange={() => { alteraP3(1); alteraMostraP4(true); alteraMostraP3(false) }} /> Enrolados </label>
-                    <br />
+                    <label><input name="p3" type="radio" onChange={() => { alteraP3(1); alteraMostraP4(true); alteraMostraP3(false) }} /> Enrolados </label>
+                    <br /> */}
                 </div>
             }
 
@@ -127,15 +146,19 @@ function QuizMusicas() {
                     </audio>
 
                     <br />
+                    <div onClick={() => { alteraP4(0); alteraMostraP5(true); alteraMostraP4(false) }} > UP - Altas Aventuras </div>
+                    <div onClick={() => { alteraP4(1); alteraMostraP5(true); alteraMostraP4(false) }} > Frozen </div>
+                    <div onClick={() => { alteraP4(0); alteraMostraP5(true); alteraMostraP4(false) }} > Hércules </div>
+                    <div onClick={() => { alteraP4(0); alteraMostraP5(true); alteraMostraP4(false) }} > A Princesa e o Sapo </div>
 
-                    <label><input name="p2" type="radio" onChange={() => { alteraP4(0); alteraMostraP5(true); alteraMostraP4(false) }} /> Up altas aventuras </label>
+                    {/* <label><input name="p4" type="radio" onChange={() => { alteraP4(0); alteraMostraP5(true); alteraMostraP4(false) }} /> Up altas aventuras </label>
                     <br />
-                    <label><input name="p2" type="radio" onChange={() => { alteraP4(1); alteraMostraP5(true); alteraMostraP4(false) }} /> Frozen </label>
+                    <label><input name="p4" type="radio" onChange={() => { alteraP4(1); alteraMostraP5(true); alteraMostraP4(false) }} /> Frozen </label>
                     <br />
-                    <label><input name="p2" type="radio" onChange={() => { alteraP4(0); alteraMostraP5(true); alteraMostraP4(false) }} /> Hércules </label>
+                    <label><input name="p4" type="radio" onChange={() => { alteraP4(0); alteraMostraP5(true); alteraMostraP4(false) }} /> Hércules </label>
                     <br />
-                    <label><input name="p2" type="radio" onChange={() => { alteraP4(0); alteraMostraP5(true); alteraMostraP4(false) }} /> A Princesa e o Sapo </label>
-                    <br />
+                    <label><input name="p4" type="radio" onChange={() => { alteraP4(0); alteraMostraP5(true); alteraMostraP4(false) }} /> A Princesa e o Sapo </label>
+                    <br /> */}
                 </div>
             }
 
@@ -149,15 +172,19 @@ function QuizMusicas() {
                     </audio>
 
                     <br />
+                    <div onClick={() => { alteraP5(0); alteraMostraP6(true); alteraMostraP5(false) }} > Irmão Urso </div>
+                    <div onClick={() => { alteraP5(0); alteraMostraP6(true); alteraMostraP5(false) }} > Mulan </div>
+                    <div onClick={() => { alteraP5(1); alteraMostraP6(true); alteraMostraP5(false) }} > Aladdin </div>
+                    <div onClick={() => { alteraP5(0); alteraMostraP6(true); alteraMostraP5(false) }} > Cinderela </div>
 
-                    <label><input name="p2" type="radio" onChange={() => { alteraP5(0); alteraMostraP6(true); alteraMostraP5(false) }} /> Irmão Urso </label>
+                    {/* <label><input name="p5" type="radio" onChange={() => { alteraP5(0); alteraMostraP6(true); alteraMostraP5(false) }} /> Irmão Urso </label>
                     <br />
-                    <label><input name="p2" type="radio" onChange={() => { alteraP5(0); alteraMostraP6(true); alteraMostraP5(false) }} /> Mulan </label>
+                    <label><input name="p5" type="radio" onChange={() => { alteraP5(0); alteraMostraP6(true); alteraMostraP5(false) }} /> Mulan </label>
                     <br />
-                    <label><input name="p2" type="radio" onChange={() => { alteraP5(1); alteraMostraP6(true); alteraMostraP5(false) }} /> Aladdin </label>
+                    <label><input name="p5" type="radio" onChange={() => { alteraP5(1); alteraMostraP6(true); alteraMostraP5(false) }} /> Aladdin </label>
                     <br />
-                    <label><input name="p2" type="radio" onChange={() => { alteraP5(0); alteraMostraP6(true); alteraMostraP5(false) }} /> Cinderela </label>
-                    <br />
+                    <label><input name="p5" type="radio" onChange={() => { alteraP5(0); alteraMostraP6(true); alteraMostraP5(false) }} /> Cinderela </label>
+                    <br /> */}
                 </div>
             }
 
@@ -171,24 +198,34 @@ function QuizMusicas() {
                     </audio>
 
                     <br />
+                    <div onClick={() => alteraP6(0)} > A Bela adormecida </div>
+                    <div onClick={() => alteraP6(0)} > Pocahontas </div>
+                    <div onClick={() => alteraP6(0)} > A Pequena Sereia </div>
+                    <div onClick={() => alteraP6(1)} > Tarzan </div>
 
-                    <label><input name="p2" type="radio" onChange={() => alteraP6(0)} /> A Bela adormecida </label>
+                    {/* <label><input name="p6" type="radio" onChange={() => alteraP6(0)} /> A Bela adormecida </label>
                     <br />
-                    <label><input name="p2" type="radio" onChange={() => alteraP6(0)} /> Pocahontas </label>
+                    <label><input name="p6" type="radio" onChange={() => alteraP6(0)} /> Pocahontas </label>
                     <br />
-                    <label><input name="p2" type="radio" onChange={() => alteraP6(0)} /> A Pequena Sereia </label>
+                    <label><input name="p6" type="radio" onChange={() => alteraP6(0)} /> A Pequena Sereia </label>
                     <br />
-                    <label><input name="p2" type="radio" onChange={() => alteraP6(1)} /> Tarzan </label>
-                    <br />
+                    <label><input name="p6" type="radio" onChange={() => alteraP6(1)} /> Tarzan </label>
+                    <br /> */}
 
                     <button onClick={() => { calculaTotal(); alteraMostraFinal(true); alteraMostraP6(false) }}> Finalizar </button>
                 </div>
             }
 
             {
+
+}
+
+            {
                 mostraFinal == true &&
                 <div className="final">
                     <p> Total de pontos: {total} <br /> de 6 perguntas</p>
+                    <br/>
+                    
                     <ol>
                         <li> <img src='/capa_pinocchio.jpg' width={80} height={120} /> </li>
                         <li> <img src='/capa_cinderela.jpg' width={80} height={120} /> </li>
@@ -209,21 +246,6 @@ function QuizMusicas() {
                         width={250}
                         height={150}
                     />
-                </div>
-            }
-
-
-            {
-                mostraErro == true &&
-                <div className="erro">
-                    <p>Você acertou!!! 😁</p>
-                </div>
-            }
-
-            {
-                mostraAcerto == true &&
-                <div className="acerto">
-                    <p>Você errou!!! 😥</p>
                 </div>
             }
 
